@@ -19,8 +19,18 @@ An Android application that displays a list of items fetched from a remote JSON 
 
 ## ⚡ **Getting Started**
 
-### 1️⃣ **Clone the Repository**
+1) Clone the Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/FetchRewardsApp.git
 cd FetchRewardsApp
+
+2) Open in Android Studio
+	1.	Open Android Studio.
+	2.	Select “Open an existing project”.
+	3.	Navigate to the cloned repo and open it.
+
+3) Run the App
+	•	Ensure you have an Android emulator or physical device connected.
+	•	Click the Run button in Android Studio.
+
