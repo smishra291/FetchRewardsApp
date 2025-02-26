@@ -26,12 +26,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        // Initialize RecyclerView
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        // Fetch data from API
+
         fetchItems();
     }
 
@@ -60,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
                             // First, sort by listId
                             int listIdComparison = Integer.compare(item1.getListId(), item2.getListId());
                             if (listIdComparison == 0) {
-                                // Extract numbers from "Item X" and compare numerically
                                 int num1 = extractItemNumber(item1.getName());
                                 int num2 = extractItemNumber(item2.getName());
                                 return Integer.compare(num1, num2);
